@@ -9,7 +9,11 @@ def create_graph_from_input_file_and_print():
         for i in range(edge):  # connecting all the edge
             s, d, wt = map(int, infile.readline().split())
             graph[s].append((d, wt))
+            graph[d].append((s, wt))
 
-        for k, v in graph.items():  # printing the graph
-            print(k, v)
-create_graph_from_input_file_and_print()
+
+
+    return graph
+def print_the_graph(graph):
+    for k, v in graph.items():  # printing the graph
+        print(k, v)
