@@ -9,13 +9,12 @@ def mergeSort(arr):
         mid = len(arr)//2
         a1 = mergeSort(arr[:mid])  # write the parameter
         a2 = mergeSort(arr[mid:])  # write the parameter
-
         return merge(a1, a2)
 def merge(left, right):
     result = []
     i = j = 0
     while i < len(left) and j < len(right):
-        if left[i] < right[j]:
+        if left[i] <=right[j]:
             result.append(left[i])
             i += 1
         else:

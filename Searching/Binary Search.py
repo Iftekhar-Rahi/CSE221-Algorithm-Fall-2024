@@ -9,6 +9,5 @@ def binary_search(arr,target):
             left=mid+1
         else:
             right=mid-1
-arr = [100, 1201, 292, 21323, 2132, 3123, 31, 31, 3]
-arr.sort()  # Sorting the array first
-print(binary_search(arr, 100))
+arr = arr = [23,2,19,3,7,11,5,13]
+print(binary_search(arr, 2))
