@@ -7,7 +7,7 @@
 # 5. steps of searching
 #   1. dequeue an element from the queue and check if it is visited or not.                                 -1= unvisited,
 #          if visited, update 1 in visited array                                                             0= visited but not explored,
-#   2. push all the adjecent vertex in the queue and mark them as 0 in the visited array                     1= visited and exploreda
+#   2. push all the adjecent vertex in the queue and mark them as 0 in the visited array                     1= visited and explored
 
 from queue import Queue
 from create_graph_from_input_file_and_print import *              #from the_file import the_function
@@ -27,5 +27,5 @@ def BFS(graph, source):
                     q.put(neigh[0])
         else:
             q.get()
-BFS(graph,6)
+BFS(graph,1)
 # print_the_graph(graph)
