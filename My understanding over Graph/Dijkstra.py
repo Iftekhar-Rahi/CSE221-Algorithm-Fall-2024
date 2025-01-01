@@ -19,7 +19,10 @@ def Dijkstra(graph,source):
                 dis[node_of_v]=w+weight_of_v
                 par[node_of_v]=u
                 q.put((dis[node_of_v], node_of_v))
-
+            # if w+v[1]<dis[v[0]]:
+            #     dis[v[0]]=w+v[1]
+            #     par[v[0]]=u
+            #     q.put((dis[v[0]], v[0]))
     print(dis[1:])
     print(par[1:])
 Dijkstra(graph,1)
